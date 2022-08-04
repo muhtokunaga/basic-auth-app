@@ -15,22 +15,20 @@ export function SignUp() {
 		<Container>
 			<TouchableWithoutFeedback onPress={Keyboard.dismiss}>
 				<KeyboardAvoidingView behavior="position" enabled>
-					<>
-						<Title>
-							Crie sua{'\n'}conta
-						</Title>
+					<Title>
+						Crie sua{'\n'}conta
+					</Title>
 
-						<Subtitle>
-							Faça seu cadastro de forma rápida e fácil
-						</Subtitle>
-						<Form />
-						<ViewVoltar >
-							<Text>Já possui uma conta?</Text>
-							<TouchableOpacity onPress={openPage}>
-								<Voltar>Faça Login aqui!</Voltar>
-							</TouchableOpacity>
-						</ViewVoltar>
-					</>
+					<Subtitle>
+						Faça seu cadastro de forma rápida e fácil
+					</Subtitle>
+					<Form />
+					<ViewVoltar >
+						<Text>Já possui uma conta?</Text>
+						<TouchableOpacity onPress={openPage}>
+							<Voltar>Faça Login aqui!</Voltar>
+						</TouchableOpacity>
+					</ViewVoltar>
 				</KeyboardAvoidingView>
 			</TouchableWithoutFeedback>
 		</Container >
